@@ -5,9 +5,9 @@ import Tarjeta from './components/Tarjeta'
 
 const App = () => {
   return (
-  <>
+  <div className='min-h-screen bg-gray-100'>
     <Header />
-    <main>
+    <main className='container mx-auto p-4'>
       <Saludo nombre="Pepe" edad={44}/>
       <Saludo/>
       <Saludo nombre="Carla" edad={24}/>
@@ -15,7 +15,8 @@ const App = () => {
         <Tarjeta 
         title="React" 
         description="Lenguaje REact" 
-        urlImage="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w" />
+        urlImage="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w" 
+        favorite={true}/>
         <Tarjeta 
         title="React" 
         description="Lenguaje REact" 
@@ -26,7 +27,7 @@ const App = () => {
         urlImage="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?q=80&w" />
       </div>
     </main>
-  </>
+  </div>
   )
 }
 

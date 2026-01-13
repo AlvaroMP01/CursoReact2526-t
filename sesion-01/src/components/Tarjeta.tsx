@@ -13,7 +13,7 @@ const Tarjeta = ({title, description, urlImage, favorite=false}:
     TarjetaProps) => {
     //Renderizado Opcional
     return (
-        <div className={`rounded-lg shadow-md p-6 ${favorite ? "bg-yellow-200 border-2 border-amber-700" : "bg-white"}`}>
+        <div className={`rounded-lg shadow-md p-6 ${favorite ? "bg-blue-200 border-2 border-cyan-700" : "bg-white"}`}>
         {urlImage && (
             <img
             className='w-full h-48 object-cover rounded-md mb-4'
