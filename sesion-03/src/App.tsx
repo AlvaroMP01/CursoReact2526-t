@@ -16,7 +16,7 @@ const App = () => {
 
     </ErrorBoundary> */}
       <Suspense 
-        fallback={<LoadingFallingBack message="Cocinando platos para ti... "/> 
+        fallback={<LoadingFallingBack message="Cocinando platos para ti... 🍽️"/> 
         }
       >
         <PlatosList platosPromise={platosPromise}/>
